@@ -1,0 +1,11 @@
+[Unit]
+Description=Temperature Sensor 
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/MCP9808-TempSensor-Setup/runTempSensor.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
