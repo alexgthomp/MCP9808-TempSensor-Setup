@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install build-essential python-dev python-pip python-smbus git
+sudo apt-get install build-essential python-dev python-pip python-smbus git i2c-tools
 sudo pip install RPi.GPIO
 git clone https://github.com/adafruit/Adafruit_Python_MCP9808.git
 cd Adafruit_Python_MCP9808
